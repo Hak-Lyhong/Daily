@@ -1,0 +1,19 @@
+@media screen and (min-width: 680px) {
+    aside {
+        width: 33%;
+    }
+    section.showlisting{
+        width: 66%;
+    }
+}
+@media screen and (max-width: 680px) {
+    aside {
+        display: none;
+    }
+    section.showlisting{
+        width: 100%
+    }
+}
+section.showlisting {
+    margin-bottom: 25px;
+}
