@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="all" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+            
+<div id="body">
+    <div class="left-content">
+        <div class="content1">
+            <h3>    My favorite January books</h3>
+            <a href="book1.html">
+                <p id="khmer_Font">
+                    1. រដូវអត់អាហារ
+                </p><br>
+                
+                <img src="images/Screenshot_2023-01-30-15-35-01-73.jpg">
+                
+            </a>
+ 
+            <a href="book2.html">
+                <p>2. PHP - Learn one day and learn it well</p>
+                <img src="images/Screenshot (155).png">
+            </a>
+            <p>✨✨✨ 3.6 Stars</p><br>
+            <a href="book3.html">
+                <p>3. ឲ - Give</p>
+                <img src="images/photo_2023-01-31_12-12-34.jpg">
+            </a>
+            <p>✨✨✨✨ 4 Stars</p><br>
+          </div>
+    </div>
+    <div class="main-content"><p>hello</p></div>
+    
+    <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div>
+      
+          
+  <div class="footer"><h4>Date of develop: 30 January 2023</h4></div>
+  <div class="hotel_a">
+    <div class="stars-outer">
+      <div class="stars-inner"></div>
+    </div></div><p> 4.5 stars</p>
+  <script>
+    const ratings = {
+  hotel_a : 4.0
+};
+const starTotal = 5
+for(const rating in ratings) {  
+  // 2
+  const starPercentage = (ratings[rating] / starTotal) * 100;
+  // 3
+  const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
+  // 4
+  document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded; 
+}
+
+  </script>
+
+</body>
+</html>
