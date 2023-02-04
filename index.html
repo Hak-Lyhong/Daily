@@ -35,42 +35,8 @@
             <p>✨✨✨✨ 4 Stars</p><br>
           </div>
     </div>
-    <div class="main-content"><p>hello</p></div>
-    
-    <div class="rate">
-        <input type="radio" id="star5" name="rate" value="5" />
-        <label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" />
-        <label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" />
-        <label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" />
-        <label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" />
-        <label for="star1" title="text">1 star</label>
-      </div>
-      
-          
+     
   <div class="footer"><h4>Date of develop: 30 January 2023</h4></div>
-  <div class="hotel_a">
-    <div class="stars-outer">
-      <div class="stars-inner"></div>
-    </div></div><p> 4.5 stars</p>
-  <script>
-    const ratings = {
-  hotel_a : 4.0
-};
-const starTotal = 5
-for(const rating in ratings) {  
-  // 2
-  const starPercentage = (ratings[rating] / starTotal) * 100;
-  // 3
-  const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-  // 4
-  document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded; 
-}
-
-  </script>
 
 </body>
 </html>
