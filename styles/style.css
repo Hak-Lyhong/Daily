@@ -1,0 +1,140 @@
+*{
+    
+    width: 100%;
+}
+#wear{
+    
+    -webkit-text-fill-color: blue;
+    
+}
+
+.left-content{
+    
+    float: left;
+}
+.main-content {
+    display: grid;
+    width: 3fr;
+    float: right;
+    background-color: #ffaa;
+}
+.content1{
+    
+    display:inline;
+    margin-top: 40px;
+    line-break: 0px;
+    padding: 5px;
+    float: left;
+    box-shadow: 0px 0px 10px black;
+    width: 200px;
+    margin-bottom: 13px;
+}
+a:hover{
+    text-decoration: none;
+    opacity: 47%;
+    color: rgb(11, 5, 101);
+    
+}
+h3{
+    
+    margin: 10px;
+}
+h3:first-line{
+    padding-left: 10px;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+p{
+   line-height: 20px;
+   margin: 3px;
+}
+#khmer_Font{
+    padding-top: 13px;
+    line-height: 0;
+    margin-top: 3px;
+}
+.footer{
+    opacity: 70%;
+    background-color: grey;
+    display:flex;
+    text-align:center;
+    font-family: 'roboto', sans-serif;
+}
+
+       .rate {
+        float: left;
+        height: 46px;
+        padding: 0 10px;
+    }
+    .rate:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+    }
+    .rate:not(:checked) > label {
+        float:right;
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:30px;
+        color:#ccc;
+    }
+    .rate:not(:checked) > label:before {
+        content: '★ ';
+    }
+    .rate > input:checked ~ label {
+        color: #ffc700;    
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;  
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+   
+      .stars-outer {
+        display: inline-block;
+        position: relative;
+        font-family: FontAwesome;
+      }
+      
+      .stars-outer::before {
+        content: "\f006 \f006 \f006 \f006 \f006";
+      }
+      
+      .stars-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+      }
+      
+      .stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        color: #f8ce0b;
+     
+      }
+      .stars-inner {
+        width: 0;
+      }
+      .w{
+        
+        position: fixed;
+        width: 30px;
+       overflow:auto;
+        margin-left: 20px;
+        color:#f8ce0b;
+        float:right;
+      }
