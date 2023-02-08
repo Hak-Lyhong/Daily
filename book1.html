@@ -26,7 +26,7 @@
       </div>
       <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
-        <img src="images/slide4.jpg" style="width:100%">
+        <img src="images/slide4_1.jpg" style="width:100%" class="img9">
         <div class="text">His family</div>
       </div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -88,6 +88,8 @@
         .p1, .p3{
         font-family:khmer_victorya_jrung;
         font-size: 36px;
+        margin-left: 20px;
+        margin-right: 20px;
         }
         .p1::first-line{
             font-style: oblique;
@@ -110,7 +112,6 @@
             font-family: khmer_victorya_jrung;
             font-size: 36px;
         }
-       
         .p2{
             margin: 0px;
             font-family:khmer_victorya_jrung;
@@ -121,9 +122,12 @@
         .link1 {
             font-size: 18px;
         }
+        .link2 {
+          margin-left: 30px;
+        }
     </style>
    <div class="right-block">
-    <p class="p1">
+    <p class="p1" style=text-align:justify>
         រដូវអត់អាហារ.........<br><br>
         ជាកម្រងរឿងពិតរបស់និសិ្សតពេទ្យម្នាក់ ដែលបានរួចផុតជីវិតពីរបបប្រល័យពូជសាសន៍ ប៉ុល ពត ។ ជាមួយនឹងជីវិតដ៏សែនលំបាកវេទនា លោកជាសមាជិកគ្រួសារតែម្នាក់គត់ ដែលនៅមានជីវិត
         ក្រោយថ្ងៃរំដោះ ក្នុងចំណោមសមាជិកគ្រួសារ២៤នាក់ដែលមកជាមួយគ្នាគ្រាថ្ងៃពួកខ្មែរក្រហមបណ្តេញចេញពីទីក្រុងភ្នំពេញ ។ 
@@ -134,13 +138,12 @@
         យកទៅសម្លាប់ចោល ចុះហេតុអ្វីលោកអាចគេចផុតពីគ្រោះថ្នាក់មួយនេះបាន?......
     </p>
     
-    <p class="p2">អ្នកអាចស្វែងរកសៀវភៅនេះបាន នៅលើគេហទំព័រ &raquo;</p><a href="https://www.elibraryofcambodia.org" class="link1">Elibrary Book of Cambodia</a>
+    <div class="link2"><p class="p2">អ្នកអាចស្វែងរកសៀវភៅនេះបាន នៅលើគេហទំព័រ &raquo;</p><a href="https://www.elibraryofcambodia.org" class="link1">Elibrary Book of Cambodia</a></div>
     <p class="p3">
         មេរៀនទាំង៥ដែលខ្ញុំបានរៀនចេញពីសៀវភៅនេះ
     </p>
     <ol>
-        <li>ចំណេះវិជ្ជា ពិតជាមានសារៈសំខាន់ណាស់ទោះក្នុងពេលណាៗក៏ដោយ ព្រោះវាអាចផ្តល់ជាផ្លូវ គំនិតពិចារណា ដំណោះស្រាយតាមកាលៈទេសៈ
-            ជាក់ស្តែង 
+        <li>ចំណេះវិជ្ជា ពិតជាមានសារៈសំខាន់ណាស់ទោះក្នុងពេលណាៗក៏ដោយ ព្រោះវាអាចផ្តល់ជាផ្លូវ គំនិតពិចារណា ដំណោះស្រាយតាមកាលៈទេសៈជាក់ស្តែង 
         </li>
         <LI>
             អាហារជារបស់សំខាន់ ដូច្នេះយើងមិនត្រូវខ្ជះខ្ជាយនោះទេ 
@@ -161,8 +164,12 @@
         display: none
       }
       img {
+        width: 200px;
+        height: 300px;
         vertical-align: middle;
       }
+   
+     
       .slideshow-container {
         max-width: 200px;
         position: relative;
@@ -196,11 +203,15 @@
       }
       /* Caption text */
       .text {
+        background-color: #929292;
+        
         color: #ffffff;
         font-size: 15px;
-        padding: 8px 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
         position: absolute;
         bottom: 8px;
+        
         width: 100%;
         text-align: center;
       }
