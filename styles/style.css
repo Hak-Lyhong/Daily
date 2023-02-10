@@ -31,15 +31,20 @@ h3:first-line{
     padding-left: 10px;
 }
 img{
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
     width: 120px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 p{
    line-height: 20px;
    margin: 3px;
+   margin-bottom: 10px;
+   margin-left: 12px;
+}
+p::first-letter{
+    font-weight: bold;
 }
 #khmer_Font{
     padding-top: 13px;
