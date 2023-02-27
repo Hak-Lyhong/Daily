@@ -11,8 +11,12 @@
         background-color: darksalmon;
         margin: 0px;
        }
+       #more {
+        display: none;
+       }
        header {
-        
+        top:0;
+        position: fixed;
         height: 45px;
         width: 100%;
         display: flex;
