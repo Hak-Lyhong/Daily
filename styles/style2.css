@@ -12,6 +12,7 @@
         margin: 0px;
        }
        header {
+        height: 40px;
         width: 100%;
         display: flex;
         background-color: dodgerblue;
@@ -20,11 +21,14 @@
         width: 50px;
         height: auto;
         margin-right: 60px;
+        vertical-align: auto;
+        
        }
        .menu a {
         text-decoration: none;
         padding: 10px;
         color: #ddd;
+        font-size: 0.75rem;
        }
        .menu a:hover {
         text-decoration: underline;
@@ -89,8 +93,13 @@
         }
         .footer #uper_foot {
             display: flex;
+            margin-left: 20px;
+            margin-top: 30px;
         }
         span {
             margin-bottom: 30px;
+        }
+        #help, #about_us{
+            margin-left: 30px;
         }
 }
