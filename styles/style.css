@@ -1,4 +1,4 @@
-
+@media screen and (min-width: 768px) {
 @font-face {
     font-family: KhJayavarmon;
     src: url(../fonts/KDJayavarman1.ttf);
@@ -8,6 +8,9 @@
     margin-right:400px;
    
 }
+summary:hover{
+    cursor: pointer;
+}
 .menu {
     
     width: 100%;
@@ -16,11 +19,10 @@
     background-color: black;
 }
 .menu a {
-    float: left;
    
     text-align: center;
     color: #f2f2f2;
-    padding: 0px 15px;
+    
     text-decoration: none;
     font-size: 17px;
     margin: auto 6px auto auto;
@@ -30,10 +32,16 @@
     width: 300px;
 }
 details {
+    padding: 4px;
     background-color: rgb(221, 221, 221);
     width: 300px;
 }
+img .logo1{
+    background-image: none !important;
+}
 summary {
+    margin-left: 10px;
+    padding: 4px;
     background-color: rgb(160, 160, 160);
     width: 300px;
     padding-top: 10px;
@@ -149,7 +157,8 @@ li{
     display:grid;
     text-align: center;
 }
-@media  screen and (max-width: 660px) {
+
+
     * {
         width: 100%;
     }

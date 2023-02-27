@@ -1,6 +1,96 @@
-@media screen and (min-width: 768px) {
-    
-}
-@media screen and (max-width: ){
 
+@media screen and (max-width: 767px){
+ 
+        @font-face {
+            font-family: KhJayavarmon;
+            src: url(../fonts//Khmer\ SN\ Kampongcham.ttf);
+        }
+       body {
+        font-family: KhJavavarmon;
+        width: 100%;
+        background-color: darksalmon;
+        margin: 0px;
+       }
+       header {
+        width: 100%;
+        display: flex;
+        background-color: dodgerblue;
+       }
+       header img {
+        width: 50px;
+        height: auto;
+        margin-right: 60px;
+       }
+       .menu a {
+        text-decoration: none;
+        padding: 10px;
+        color: #ddd;
+       }
+       .menu a:hover {
+        text-decoration: underline;
+       }
+       
+       a {
+        font-family: KhJayavarmon;
+       }
+       summary {
+        cursor: pointer;
+       }
+       detail {
+        max-width: 766px;
+       }
+        .main-content a:hover {
+            opacity: 50%;
+        }
+
+        .main-content img {
+            width: 90px;
+        }
+
+
+
+
+        .footer{
+            display:block;
+            
+            color: #dddd;
+            background-color: darkblue;
+            max-width: 100%;
+        }
+        .footer img {
+            width: 30px;
+            
+        }
+        .footer img:hover {
+            opacity: 80%;
+        }
+        .footer a{
+            color: #dddd;
+        }
+        .footer a:hover {
+            color:palegoldenrod;
+            text-decoration: none;
+        }
+        .footer li {
+            list-style: none;
+        }
+        #link_logo {
+            margin: 20px;
+            margin-bottom: 7px;
+            display: grid;
+            text-align: center;
+        }
+        #link_logo{
+            
+        }
+        img.logo1 {
+            margin: 20px;
+            width: 50px;
+        }
+        .footer #uper_foot {
+            display: flex;
+        }
+        span {
+            margin-bottom: 30px;
+        }
 }
