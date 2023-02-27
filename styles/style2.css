@@ -83,6 +83,7 @@
             color: #dddd;
             background-color: darkblue;
             max-width: 100%;
+            bottom: 0;
         }
         .footer img {
             width: 30px;
@@ -92,6 +93,7 @@
             opacity: 80%;
         }
         .footer a{
+            font-family: sans-serif;
             color: #dddd;
         }
         .footer a:hover {
@@ -121,5 +123,8 @@
         }
         #help, #about_us{
             font-size: 15px;
+        }
+        #help li, #about_us li{
+            padding-top:10px;
         }
 }
