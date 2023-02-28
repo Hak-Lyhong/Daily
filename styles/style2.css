@@ -7,6 +7,10 @@
             font-family: KhJayavarmon;
             src: url(../fonts/KDJayavarman1.ttf);
         }
+        @font-face {
+            font-family: Kh;
+            src: url(../fonts/NiDAFunan.ttf);
+        }
         .milestone {
             
             margin: 10px;
@@ -23,10 +27,10 @@
             margin: 15px;
             font-size: 14px;
         }
-       .milestone #b1 {
+       .milestone #up {
         
         padding-left: 18px;
-        padding-bottom: 15px;
+        padding-top: 15px;
         
        }
        body {
@@ -66,7 +70,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-      width: 40px;
+      width: 45px;
 
       
         
@@ -88,15 +92,29 @@
        }
        summary {
         cursor: pointer;
+        margin-left: 10px;
+        margin-bottom: 10px;
        }
        detail {
         
         max-width: 766px;
        }
        .main-content {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 20px;
+        margin: 10px;
+        background-color:rgba(255, 239, 213, 0.53);
+            border-radius: 10px;
+            background-blend-mode:overlay;
+            box-shadow: 5px 5px 10px rgba(78, 78, 78, 0.57);
+
+       }
+       .main-content #vonders {
+        font-family:Kh;
+        font-size: 14px;
+        text-align: center;
+        text-decoration:underline;
+       }
+       details {
+        margin-left: 10px;
        }
        .sum1 {
         margin-left: 10px;
@@ -124,7 +142,7 @@
             max-width: 100%;
             bottom: 0;
         }
-        .footer img {
+        #link_logo img {
             width: 30px;
             
         }
@@ -162,5 +180,8 @@
         }
         #help li, #about_us li{
             padding-top:10px;
+        }
+        .logo1 {
+            width: 54px;
         }
 }
