@@ -1,15 +1,55 @@
 
 @media screen and (max-width: 767px){
- 
+        * {
+            box-sizing: border-box;
+        }
         @font-face {
             font-family: KhJayavarmon;
-            src: url(../fonts//Khmer\ SN\ Kampongcham.ttf);
+            src: url(../fonts/KDJayavarman1.ttf);
         }
+        .milestone {
+            margin: 10px;
+            background-color:rgba(255, 239, 213, 0.519);
+            border-radius: 10px;
+            background-blend-mode:overlay;
+            
+            
+        }
+        .milestone p {
+            font-family: KhJayavarmon;
+            text-align: justify;
+            margin: 15px;
+            font-size: 14px;
+        }
+       .milestone #b1 {
+        padding-left: 18px;
+        padding-bottom: 15px;
+        
+       }
        body {
         font-family: KhJavavarmon;
         width: 100%;
-        background-color: darksalmon;
         margin: 0px;
+        
+        
+       }
+       .background {
+        background-image: url('..//images/a.jpg');
+        background-color: #cccccc;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover ;
+        width: 100%;
+        
+        margin: 0;
+        height: 100%;
+        background-attachment: fixed;
+       }
+       .blur{
+        background: rgba(255, 255, 255, 0.2);
+        
+        
+        width: 100%;
        }
        #more {
         display: none;
@@ -21,6 +61,7 @@
         width: 100%;
         display: flex;
         background-color: dodgerblue;
+        font-weight: bolder;
        }
        header img {
         display: block;
@@ -93,7 +134,7 @@
             opacity: 80%;
         }
         .footer a{
-            font-family: sans-serif;
+            font-family:san;
             color: #dddd;
         }
         .footer a:hover {
@@ -108,9 +149,6 @@
             margin-bottom: 7px;
             display: grid;
             text-align: center;
-        }
-        #link_logo{
-            
         }
        
         .footer #uper_foot {
