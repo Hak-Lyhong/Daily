@@ -8,6 +8,7 @@
             src: url(../fonts/KDJayavarman1.ttf);
         }
         .milestone {
+            
             margin: 10px;
             background-color:rgba(255, 239, 213, 0.53);
             border-radius: 10px;
@@ -23,6 +24,7 @@
             font-size: 14px;
         }
        .milestone #b1 {
+        
         padding-left: 18px;
         padding-bottom: 15px;
         
@@ -118,7 +120,7 @@
             display:block;
             
             color: #dddd;
-            background-color: dodgerblue;
+            background-color: rgba(30, 144, 255, 0.87);
             max-width: 100%;
             bottom: 0;
         }
