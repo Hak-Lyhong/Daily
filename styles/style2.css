@@ -147,6 +147,14 @@
             max-width: 100%;
             bottom: 0;
         }
+        .milestone img {
+            margin-left: 10px;
+            
+            
+            width: 100px;
+            height:100px;
+            flex:none;
+        }
         
         #link_logo img {
             width: 30px;
