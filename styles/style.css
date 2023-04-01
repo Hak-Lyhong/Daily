@@ -1,166 +1,200 @@
 @media screen and (min-width: 768px) {
-@font-face {
-    font-family: KhJayavarmon;
-    src: url(../fonts/KDJayavarman1.ttf);
-}
-.menu a img{
-    width: 30px;
-    margin-right:400px;
-   
-}
-summary:hover{
-    cursor: pointer;
-}
-.menu {
-    
-    width: 100%;
-   height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-}
-.menu a {
-   
-    text-align: center;
-    color: #f2f2f2;
-    
-    text-decoration: none;
-    font-size: 17px;
-    margin: auto 6px auto auto;
-}
-.main-content {
-    margin-bottom: 10px;
-    width: 300px;
-}
-details {
-    padding: 4px;
-    background-color: rgb(221, 221, 221);
-    width: 300px;
-}
-img .logo1{
-    background-image: none !important;
-}
-summary {
-    margin-left: 10px;
-    padding: 4px;
-    background-color: rgb(160, 160, 160);
-    width: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-}
-summary::marker{
-    list-style: square;
-}
-p#top1 {
-    margin-top: 15px;
-}
-.sum1{
-    background-color: rgb(190, 189, 189);
-    width: 280px;
-    padding-left: 20px;
-}
-.menu a:hover {
-    background-color: chartreuse;
-}
-p{
-    font-family: khJayavarmon;
-    font-size: 14px;
-}
-.left-content{
-    
-    float: left;
-}
-.content1{
-    
-    
-    margin-top: 40px;
-    line-break: 0px;
-    
-    float: left;
-    box-shadow: 0px 0px 10px black;
-    width: 200px;
-    margin-bottom: 13px;
-}
-a:hover{
-    text-decoration: none;
-    opacity: 57%;
-    color: rgb(11, 5, 101);
-    
-}
-h3{
-    
-    margin: 10px;
-}
-h3:first-line{
-    padding-left: 10px;
-}
-img{
-    margin-left: 10px;
-    margin-right: auto;
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
-}
-p{
-   line-height: 20px;
-   margin: 3px;
-   margin-bottom: 10px;
-   margin-left: 12px;
-}
-p::first-letter{
-    font-weight: bold;
-}
-#khmer_Font{
-    padding-top: 13px;
-    line-height: 0;
-    margin-top: 3px;
-}
-.footer{
-    
-
-    color:aliceblue;
-    font-family: 'roboto', sans-serif;
-
-}
-
-#uper_foot {
-    
-    background-color: rgba(62, 62, 62);
-    display:flex;
-}
-#logo, #help, #about_us {
-    padding: 20px;
-    display:flex;
-    width: 180px;
-   
-}
-li{
-    list-style: none;
-    margin-bottom: 5px;
-   
-}
-#uper_foot a {
-    display:inline;
-    margin: 0 auto;
-    color:aliceblue;
-    width:fit-content;
-}
-#uper_foot a:hover {
-    color:rgb(182, 255, 25);
-    text-decoration: none;
-}
-#link_logo img {
-   width: 30px;
-   
-}
-#link_logo {
-    background-color: rgb(72, 72, 72);
-    display:grid;
-    text-align: center;
-}
-
-
     * {
-        width: 100%;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: KhJayavarmon;
+        src: url(../fonts/KDJayavarman1.ttf);
+    }
+    @font-face {
+        font-family: Kh;
+        src: url(../fonts/NiDAFunan.ttf);
+    }
+    .milestone {
+        
+        margin: 10px;
+        background-color:rgba(255, 239, 213, 0.53);
+        border-radius: 10px;
+        background-blend-mode:overlay;
+        box-shadow: 5px 5px 10px rgba(78, 78, 78, 0.57);
+        
+        
+    }
+    .milestone p {
+        font-family: KhJayavarmon;
+        text-align: justify;
+        margin: 15px;
+        font-size: 14px;
+    }
+   .milestone #up {
+    
+    padding-left: 18px;
+    padding-top: 15px;
+    
+   }
+   body {
+    font-family: KhJavavarmon;
+    width: 100%;
+    margin: 0px;
+    
+    
+   }
+   .background {
+    background-image: url('..//images/a.jpg');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    width: 100%;
+    
+    margin: 0;
+    height: 100%;
+    background-attachment: fixed;
+   }
+   
+   #more {
+    display: none;
+   }
+   header {
+    top:0;
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background-color: dodgerblue;
+    font-weight: bolder;
+   }
+   header img {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+  width: 45px;
+
+  
+    
+   }
+   .menu a {
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #ddd;
+    font-size: 0.80rem;
+   }
+   .menu a:hover {
+    color:#fbe670;
+    text-decoration: underline;
+   }
+   
+   a {
+    font-family: KhJayavarmon;
+   }
+   summary {
+    font-family: century;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+   }
+   detail {
+    
+    max-width: 766px;
+   }
+   .main-content {
+    margin: 10px;
+    background-color:rgba(255, 239, 213, 0.53);
+        border-radius: 10px;
+        background-blend-mode:overlay;
+        box-shadow: 5px 5px 5px rgba(78, 78, 78, 0.57);
+
+   }
+   .main-content #vonders {
+    font-family:Kh;
+    font-size: 14px;
+    text-align: center;
+    text-decoration:underline;
+   }
+   details {
+    margin-left: 10px;
+   }
+   .sum1 {
+    margin-left: 10px;
+   }
+    .main-content a:hover {
+        opacity: 70%;
+    }
+
+    .main-content img {
+        width: 90px;
+    }
+    a .logo1{
+        margin-top: 30px;
+        margin-left: 10px;
+       
+    }
+
+    #b1 {
+        margin-left: 17px;
+        padding-bottom: 15px;
+    }
+
+    .footer{
+        display:block;
+        
+        color: #dddd;
+        background-color: rgba(30, 144, 255, 0.84);
+        max-width: 100%;
+        bottom: 0;
+    }
+    .milestone img {
+        margin-left: 10px;
+        
+        
+        width: 100px;
+        height:100px;
+        flex:none;
+    }
+    
+    #link_logo img {
+        width: 30px;
+        
+    }
+    .footer img:hover {
+        opacity: 80%;
+    }
+    .footer a{
+        font-family:san;
+        color: #dddd;
+    }
+    .footer a:hover {
+        color:rgb(255, 245, 130);
+        text-decoration: none;
+    }
+    .footer li {
+        list-style: none;
+    }
+    #link_logo {
+        margin: 20px;
+        margin-bottom: 7px;
+        display: grid;
+        text-align: center;
+    }
+   
+    .footer #uper_foot {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    span {
+        margin-bottom: 30px;
+    }
+    #help, #about_us{
+        font-size: 15px;
+    }
+    #help li, #about_us li{
+        padding-top:10px;
+    }
+    .logo1 {
+        width: 54px;
     }
 }
