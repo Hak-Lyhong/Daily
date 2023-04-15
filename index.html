@@ -97,7 +97,20 @@
                             <img src="images/Screenshot 2023-04-14 165648.png">
                         </a>
                     </details>
-
+                    <details>
+                        <summary>May</summary>
+                        <a href="">
+                            <p>
+                                1. 
+                            </p><br>
+                            <p>
+                                2. 
+                            </p><br>
+                            <p>
+                                3. 
+                            </p>
+                        </a>
+                    </details>
 
             </div>
             <div class="milestone">
@@ -145,7 +158,72 @@
 
                 <div id="b1"><button onclick="myFunction()" id="myBtn">Read more</button></div>
             </div>
+
+            <div class="milestone">
+                <p id="up"><b>ជំងឺភាសា</b></p>
+                <p>
+                    <img src="images/esrc-2019.jpg" width="120" align="left"
+                        style="margin-right:10px;" /> &ensp;&nbsp; [...អ៊ីអស់ប៉ុន្មាន ? អស់ផាំហយ...]<br>
+                        &ensp;&nbsp;[...ជំរាបសួរលោកឃូ...]<br>
+                    &ensp;&nbsp;យើងស្តាប់មើលទៅធម្មតា តែការពិតមិនធម្មតា
+                    <span id="dots">...</span><span id="more">
+                        &ensp; បើយើងក្រលេកទៅមើល ក្នុងសង្គមរស់នៅរបស់ខ្មែរយើងបច្ចុប្បន្ន ការនិយាយភាសាខ្មែរ ហាក់បីដូចជា
+                        មានបញ្ហាឆ្គាំឆ្គង​ជាច្រើន ។ ក្នុងពាក្យមួយចំនួន ការប្រើប្រាស់ហាក់មានភាពខុសពីពាក្យដើម 
+                        <br><br>
+
+                        
+                        <p><i>15/04/2023</i></p>
+                    </span>
+
+                </p>
+
+               <div id="b2" style=" margin-left: 17px;
+                padding-bottom: 15px;"><button onclick="myFunction()" id="myBtn">Read more</button></div>
+            </div>
+            <div class="milestone">
+                <p id="up"><b>អរគុណ សន្តិភាព​ !</b></p>
+                <p>
+                    <img src="images/photo_1_2023-02-28_15-58-32.jpg" width="120" align="left"
+                        style="margin-right:10px;" />
+                        &emsp;ទង្វើបែបនេះបញ្ជាក់ឲឃើញថា សៀវភៅជិតត្រូវគេបោះបង់ ។ សៀវភៅជាប្រភពនៃចំណេះដឹង ។
+                        "បោះបង់សៀវភៅ គឺសង្គមជាតិអន់ថយ
+                        ចាប់អានសៀវភៅ គឺគិតដល់ប្រទេសជាតិ ប្រទេសជាតិនឹងរីកចម្រើន" ។ 
+                    <span id="dots">...</span><span id="more">
+                        <br>
+                        &emsp;&emsp;
+                        ....
+                        <br>&emsp;&emsp;ទង្វើបែបនេះបញ្ជាក់ឲឃើញថា សៀវភៅជិតត្រូវគេបោះបង់ ។ សៀវភៅជាប្រភពនៃចំណេះដឹង ។
+                        "បោះបង់សៀវភៅ គឺសង្គមជាតិអន់ថយ
+                        ចាប់អានសៀវភៅ គឺគិតដល់ប្រទេសជាតិ ប្រទេសជាតិនឹងរីកចម្រើន" ។
+                        <br><br> &nbsp;ដកស្រង់ចេញពីសៀវភៅ កម្រងស្មេរ អ្នកនិពន្ធលោក យូង សូដា
+                        <br>&emsp;រូបត្លុក៖
+                        <br><br>
+
+                       
+
+                    </span>
+
+                </p>
+
+                <div id="b1"><button onclick="myFunction()" id="myBtn">Read more</button></div>
+            </div>
             <script>
+                function myFunction() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("myBtn");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more";
+                        moreText.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less";
+                        moreText.style.display = "inline";
+                    }
+                }
+
                 function myFunction() {
                     var dots = document.getElementById("dots");
                     var moreText = document.getElementById("more");
