@@ -7,9 +7,66 @@
     <title>Document</title>
     <link rel="stylesheet" media="all" href="styles/style.css">
     <link rel="stylesheet" media="all" href="styles/style2.css">
-    
+    <script type="text/javascript">
+        // Set slideshow speed in milliseconds
+        var slideShowSpeed = 3500;
+        // Set duration of crossfade (seconds)
+        var crossFadeDuration = 3;
+        // Specify the image files
+        var Pic = new Array();
+        // Just add as many as images as you want one by one
+        // Replace the images with your own site images
+        Pic[0] = 'images/about/1.jpg'
+        Pic[1] = 'images/about/2.jpg'
+        Pic[2] = 'images/about/3.jpg'
+        Pic[3] = 'images/about/photo_2023-04-15_11-10-30.jpg'
+        // do not edit anything below this line
+        /***********************************************
+        * Get more website widget codes @ https://www.webnots.com/demos/
+        ***********************************************/
+        var t;
+        var j = 0;
+        var p = Pic.length;
+        var preLoad = new Array();
+        for (i = 0; i < p; i++) 
+        {
+        preLoad[i] = new Image();
+        preLoad[i].src = Pic[i];
+        }
+        function runSlideShow()
+        {
+        if (document.all) 
+        {
+        document.images.SlideShow.style.filter="blendTrans(duration=2)";
+        document.images.SlideShow.style.filter=
+        "blendTrans(duration=crossFadeDuration)";
+        document.images.SlideShow.filters.blendTrans.Apply();
+        }
+        document.images.SlideShow.src = preLoad[j].src;
+        if (document.all) 
+        {
+        document.images.SlideShow.filters.blendTrans.Play();
+        }
+        j = j + 1;
+        if (j > (p - 1)) j = 0;
+        t = setTimeout('runSlideShow()', slideShowSpeed);
+        }
+        // End -->
+        </script>
 </head>
 <body>  
+    <style>
+        p {
+            font-size: 20px;
+            font-family: fantasy;
+        }
+        .slide {
+            padding-top: 45px;
+            justify-content: center;
+            display: flex;
+            top: 100px;
+        }
+    </style>
     <div class="background">
         <div class="blur">
   <div id="body">
@@ -22,10 +79,40 @@
             <a href="contact.html">CONTACT</a>
             <a href="about.html">ABOUT</a>
     </header>
+    <div class="slide">
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td>
+        <img src="" name='SlideShow' width=150 height=250>
+        </td>
+        </tr>
+        </table>
+        <script type="text/javascript">
+        runSlideShow();
+        </script>
+</div>
   </div>
         </div>
     </div>
-    
+    <p>
+        All of us were born into and grew up in various communities—our 
+families, neighborhoods, schools, clubs, friends, religious groups, cities, 
+our larger nation, and indeed the entire human race and perhaps even all 
+sentient beings. We truly are tribal animals, and we can only fully flourish 
+within communities where we truly belong. Despite our need and desire 
+for authentic community, many of us no longer experience it in our lives. 
+Many Americans are no longer close to their biological families, and the 
+neighborhoods and communities that we grew up in may no longer be 
+relevant to our lives. We all too frequently go forward on our life journey 
+with little conscious understanding about the importance that belonging 
+to various communities has for our health and happiness. Belong brilliantly 
+shows us how to know ourselves better and find, create, and connect 
+with the people and communities with whom we will find the greatest 
+fulfillment. Belong is an incredibly empowering book because it puts the 
+responsibility for finding and creating the communities that will fulfill us 
+squarely on our own shoulders, while simultaneously teaching us the skills 
+we need to do exactly that
+    </p>
   <div class="footer">
     <div id="uper_foot">
     <div id="logo">
